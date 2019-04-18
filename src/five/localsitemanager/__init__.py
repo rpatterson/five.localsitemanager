@@ -74,7 +74,7 @@ def update_sitemanager_bases(site):
     if next is None:
         next = base
     sm = site.getSiteManager()
-    sm.__bases__ = (next,)
+    sm.__bases__ = (aq_base(next), )
 
 # Original version: zope.site.site.changeSiteConfigurationAfterMove
 def update_sitemanager_bases_handler(site, event):

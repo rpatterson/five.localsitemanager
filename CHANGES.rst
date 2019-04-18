@@ -1,6 +1,12 @@
 Changelog
 =========
 
+2.0.7 - (Unreleased)
+------------------
+
+* Fix pickle errors when site managers are pickled or committed to the ZODB.
+  [rpatterson]
+
 2.0.6 - 2017-05-02
 ------------------
 

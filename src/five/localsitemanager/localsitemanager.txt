@@ -504,6 +504,12 @@ Now we make sure that that the ``__bases__`` have been setup appropriately.
     >>> folder1_1.getSiteManager().__bases__
     (<PersistentComponents ...>,)
 
+Ensure that nested site managers can be pickled:
+
+    >>> isinstance(
+    ...     folder1_1.getSiteManager().__bases__[0].__getstate__(), dict)
+    True
+
 
 Acquisition Context with Nested Sites
 -------------------------------------
