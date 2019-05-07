@@ -13,4 +13,4 @@ __pycache__
 *.pyc
 *.pyo
 *.so
-/*.egg-info
+/src/five.localsitemanager.egg-info
